@@ -1,3 +1,9 @@
+# revision 16623
+# category Package
+# catalog-ctan /macros/latex/contrib/blindtext
+# catalog-date 2010-01-05 22:17:42 +0100
+# catalog-license lppl
+# catalog-version 1.9c
 Name:		texlive-blindtext
 Version:	1.9c
 Release:	1
@@ -49,6 +55,7 @@ fuller lorem ipsum text, see the lipsum package).
 %doc %{_texmfdistdir}/source/latex/blindtext/blindtext.dtx
 %doc %{_texmfdistdir}/source/latex/blindtext/blindtext.ins
 %doc %{_texmfdistdir}/source/latex/blindtext/blindtext_texts.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ fuller lorem ipsum text, see the lipsum package).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
