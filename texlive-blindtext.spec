@@ -1,12 +1,12 @@
-# revision 16623
+# revision 25039
 # category Package
 # catalog-ctan /macros/latex/contrib/blindtext
-# catalog-date 2010-01-05 22:17:42 +0100
+# catalog-date 2011-11-23 08:28:31 +0100
 # catalog-license lppl
 # catalog-version 1.9c
 Name:		texlive-blindtext
 Version:	1.9c
-Release:	2
+Release:	3
 Summary:	Producing 'blind' text for testing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
@@ -44,7 +44,13 @@ fuller lorem ipsum text, see the lipsum package).
 #- source
 %doc %{_texmfdistdir}/source/latex/blindtext/blindtext.dtx
 %doc %{_texmfdistdir}/source/latex/blindtext/blindtext.ins
-%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_texts.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_american.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_catalan.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_english.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_french.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_german.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_latin.dtx
+%doc %{_texmfdistdir}/source/latex/blindtext/blindtext_ngerman.dtx
 
 #-----------------------------------------------------------------------
 %prep
