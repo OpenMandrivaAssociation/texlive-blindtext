@@ -61,3 +61,22 @@ fuller lorem ipsum text, see the lipsum package).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.9c-3
++ Revision: 758833
+- texlive-blindtext
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.9c-2
++ Revision: 749767
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.9c-1
++ Revision: 717952
+- texlive-blindtext
+- texlive-blindtext
+- texlive-blindtext
+- texlive-blindtext
+- texlive-blindtext
+
