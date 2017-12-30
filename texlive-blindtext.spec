@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 1.9c
 Name:		texlive-blindtext
-Version:	1.9c
-Release:	11
+Version:	2.0
+Release:	1
 Summary:	Producing 'blind' text for testing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
