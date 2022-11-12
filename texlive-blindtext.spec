@@ -5,9 +5,9 @@ Summary:	Producing 'blind' text for testing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.r25039.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.doc.r25039.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.source.r25039.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
