@@ -1,19 +1,13 @@
-# revision 25039
-# category Package
-# catalog-ctan /macros/latex/contrib/blindtext
-# catalog-date 2011-11-23 08:28:31 +0100
-# catalog-license lppl
-# catalog-version 1.9c
 Name:		texlive-blindtext
-Version:	2.0
-Release:	2
+Version:	25039
+Release:	1
 Summary:	Producing 'blind' text for testing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.r25039.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.doc.r25039.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.source.r25039.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ latin; the latin option provides a short "lorem ipsum" (for a
 fuller lorem ipsum text, see the lipsum package).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,29 +48,11 @@ fuller lorem ipsum text, see the lipsum package).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.9c-3
-+ Revision: 758833
-- texlive-blindtext
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.9c-2
-+ Revision: 749767
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.9c-1
-+ Revision: 717952
-- texlive-blindtext
-- texlive-blindtext
-- texlive-blindtext
-- texlive-blindtext
-- texlive-blindtext
-
