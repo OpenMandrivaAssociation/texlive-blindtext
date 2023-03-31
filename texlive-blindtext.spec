@@ -1,6 +1,6 @@
 Name:		texlive-blindtext
 Version:	25039
-Release:	1
+Release:	2
 Summary:	Producing 'blind' text for testing
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
