@@ -3,7 +3,7 @@ Version:	25039
 Release:	2
 Summary:	Producing 'blind' text for testing
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/blindtext
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/blindtext.doc.r%{version}.tar.xz
